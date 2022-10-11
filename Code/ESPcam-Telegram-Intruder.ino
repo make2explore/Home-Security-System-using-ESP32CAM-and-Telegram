@@ -7,6 +7,12 @@
 // Hardware          - Ai Thinker ESP32 CAM, MQ6 Sensor, Flame Sensor, AM312 PIR Sensor               
 // Sensors Used      - MQ6 LPG/Gas/Smoke Sensor, Flame Sensor, AM312 PIR Sensor
 // Source Repo       - github.com/make2explore
+//
+// -- Latest Testing on  - 01/09/22  ✅
+//    - With Following Environments
+//    - ESP32 Core Version : 2.0.1
+//    - Universal Telegram Bot library  v. 1.3.0
+//    - ArduinoJson Library v. 6.15.2
 // -------------------------------------------------------------------------------------------------------//
 
 #include <WiFi.h>
