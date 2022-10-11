@@ -33,7 +33,7 @@ bool sendPhoto = false;
 
 WiFiClientSecure clientTCP;
 UniversalTelegramBot bot(BOTtoken, clientTCP);
-secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
+clientTCP.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
 
 //CAMERA_MODEL_AI_THINKER
 #define PWDN_GPIO_NUM     32
