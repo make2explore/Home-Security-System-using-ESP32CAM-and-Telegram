@@ -48,11 +48,11 @@ Important Notes
 
 -- Versions of Libraries may get outdated with time.  
 
--- Latest Testing on  - 01/09/22  ✅
-    - With Following Environments
-    - ESP32 Core Version : 2.0.1
-    - Universal Telegram Bot library  v. 1.3.0
-    - ArduinoJson Library v. 6.15.2
+-- Latest Testing on  - 01/09/22  ✅  
+    - With Following Environments  
+    - ESP32 Core Version : 2.0.1  
+    - Universal Telegram Bot library  v. 1.3.0  
+    - ArduinoJson Library v. 6.15.2  
 
 -- Download your libraries from their updated source repositories, to avoid any errors.
 
