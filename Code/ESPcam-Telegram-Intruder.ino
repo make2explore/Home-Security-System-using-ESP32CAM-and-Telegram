@@ -39,7 +39,9 @@ bool sendPhoto = false;
 
 WiFiClientSecure clientTCP;
 UniversalTelegramBot bot(BOTtoken, clientTCP);
-clientTCP.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
+// 
+// clientTCP.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
+// Adding root certificate in Setup()
 
 //CAMERA_MODEL_AI_THINKER
 #define PWDN_GPIO_NUM     32
@@ -117,6 +119,7 @@ void setup(){
   Serial.print("Connecting to ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);  
+  clientTCP.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
     delay(500);
