@@ -160,7 +160,11 @@ void setup(){
     config.jpeg_quality = 12;  //0-63 lower number means higher quality
     config.fb_count = 1;
   }
-  
+
+  // update/Fix by @alinabeel7953 in YT video comments. 16/02/2023 17:23:00 IST by info@make2explore.com
+  // If anyone having a problem with the photos/pictures sent being/appearing out of sequence. Then uncomment following config line
+  //config.grab_mode = CAMERA_GRAB_LATEST;
+
   // camera init
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) {
